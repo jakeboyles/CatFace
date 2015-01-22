@@ -109,6 +109,42 @@ $(".cat4").on("click",function(){
 
 })
 
+
+$(".cat5").on("click",function(){
+
+  var img = new Image();
+  img.onload = function(){
+   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
+            originX: 'left',
+            originY: 'top',
+            left: 0,
+            top: 0,
+            backgroundImageStretch: true,
+        });
+  };
+  img.src = "img/cat5.png";
+  canvas.renderAll();
+
+})
+
+
+$(".cat6").on("click",function(){
+
+  var img = new Image();
+  img.onload = function(){
+   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
+            originX: 'left',
+            originY: 'top',
+            left: 0,
+            top: 0,
+            backgroundImageStretch: true,
+        });
+  };
+  img.src = "img/cat6.png";
+  canvas.renderAll();
+
+})
+
 $(".save").on("click",function(){
   canvasURL = canvas.toDataURL();
 var image = new Image();
