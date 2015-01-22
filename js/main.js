@@ -26,6 +26,7 @@ canvas.add(
     });
 
 
+
 var img = new Image();
 img.onload = function(){
    canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
@@ -141,6 +142,47 @@ $(".cat6").on("click",function(){
         });
   };
   img.src = "img/cat6.png";
+  canvas.renderAll();
+
+})
+
+
+$(".ryan").on("click",function(){
+      fabric.Image.fromURL("img/ryan.png", function(obj) {
+    canvas.add(obj.set({
+        width: 394,
+        hasControls: true,
+        //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
+        selection: false,       
+        lockRotation:false,
+        //lockMovement: false,lockMovementY: false,lockMovementX: false,
+        //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
+        transparentBorder: true,
+        height: 394,
+        angle: 0,
+        cornersize: 10,
+        left: 102, 
+        top: 52
+    }));
+    canvas.setActiveObject(canvas.item(0));
+    //img.bringToFront();
+    canvas.renderAll();
+    });
+    })
+
+$(".cat7").on("click",function(){
+
+  var img = new Image();
+  img.onload = function(){
+   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
+            originX: 'left',
+            originY: 'top',
+            left: 0,
+            top: 0,
+            backgroundImageStretch: true,
+        });
+  };
+  img.src = "img/cat7.png";
   canvas.renderAll();
 
 })
