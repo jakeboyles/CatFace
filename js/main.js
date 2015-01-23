@@ -4,26 +4,6 @@ canvas.add(
 );
 
 
-    fabric.Image.fromURL("img/thompson.png", function(obj) {
-    canvas.add(obj.set({
-        width: 394,
-        hasControls: true,
-        //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
-        selection: false,       
-        lockRotation:false,
-        //lockMovement: false,lockMovementY: false,lockMovementX: false,
-        //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
-        transparentBorder: true,
-        height: 394,
-        angle: 0,
-        cornersize: 10,
-        left: 102, 
-        top: 52
-    }));
-    canvas.setActiveObject(canvas.item(0));
-    //img.bringToFront();
-    canvas.renderAll();
-    });
 
 
 
@@ -168,7 +148,102 @@ $(".ryan").on("click",function(){
     //img.bringToFront();
     canvas.renderAll();
     });
-    })
+})
+
+
+$(".jake").on("click",function(){
+      fabric.Image.fromURL("img/jake.png", function(obj) {
+    canvas.add(obj.set({
+        width: 394,
+        hasControls: true,
+        //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
+        selection: false,       
+        lockRotation:false,
+        //lockMovement: false,lockMovementY: false,lockMovementX: false,
+        //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
+        transparentBorder: true,
+        height: 394,
+        angle: 0,
+        cornersize: 10,
+        left: 102, 
+        top: 52
+    }));
+    canvas.setActiveObject(canvas.item(0));
+    //img.bringToFront();
+    canvas.renderAll();
+    });
+})
+
+
+$(".jevan").on("click",function(){
+      fabric.Image.fromURL("img/jevan.png", function(obj) {
+    canvas.add(obj.set({
+        width: 394,
+        hasControls: true,
+        //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
+        selection: false,       
+        lockRotation:false,
+        //lockMovement: false,lockMovementY: false,lockMovementX: false,
+        //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
+        transparentBorder: true,
+        height: 394,
+        angle: 0,
+        cornersize: 10,
+        left: 102, 
+        top: 52
+    }));
+    canvas.setActiveObject(canvas.item(0));
+    //img.bringToFront();
+    canvas.renderAll();
+    });
+})
+
+$(".josh").on("click",function(){
+      fabric.Image.fromURL("img/thompson.png", function(obj) {
+    canvas.add(obj.set({
+        width: 394,
+        hasControls: true,
+        //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
+        selection: false,       
+        lockRotation:false,
+        //lockMovement: false,lockMovementY: false,lockMovementX: false,
+        //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
+        transparentBorder: true,
+        height: 394,
+        angle: 0,
+        cornersize: 10,
+        left: 102, 
+        top: 52
+    }));
+    canvas.setActiveObject(canvas.item(0));
+    //img.bringToFront();
+    canvas.renderAll();
+    });
+})
+
+
+$(".weaver").on("click",function(){
+      fabric.Image.fromURL("img/weaver.png", function(obj) {
+    canvas.add(obj.set({
+        width: 394,
+        hasControls: true,
+        //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
+        selection: false,       
+        lockRotation:false,
+        //lockMovement: false,lockMovementY: false,lockMovementX: false,
+        //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
+        transparentBorder: true,
+        height: 394,
+        angle: 0,
+        cornersize: 10,
+        left: 102, 
+        top: 52
+    }));
+    canvas.setActiveObject(canvas.item(0));
+    //img.bringToFront();
+    canvas.renderAll();
+    });
+})
 
 $(".cat7").on("click",function(){
 
@@ -183,6 +258,23 @@ $(".cat7").on("click",function(){
         });
   };
   img.src = "img/cat7.png";
+  canvas.renderAll();
+
+})
+
+$(".cat8").on("click",function(){
+
+  var img = new Image();
+  img.onload = function(){
+   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
+            originX: 'left',
+            originY: 'top',
+            left: 0,
+            top: 0,
+            backgroundImageStretch: true,
+        });
+  };
+  img.src = "img/cat8.png";
   canvas.renderAll();
 
 })
