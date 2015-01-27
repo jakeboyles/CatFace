@@ -280,9 +280,22 @@ $(".cat8").on("click",function(){
 })
 
 $(".save").on("click",function(){
-  canvasURL = canvas.toDataURL();
-var image = new Image();
-image.src = canvas.toDataURL("image/png");
-$('.saved').replaceWith(image);
-return false;
+//   canvasURL = canvas.toDataURL();
+// var image = new Image();
+// image.src = canvas.toDataURL("image/png");
+// $('.saved').replaceWith(image);
+// return false;
+
+ $.ajax({
+      type: 'POST',
+      url: 'save.php',
+      data: {task: 'save', img: canvas.toDataURL('png')},
+      success: function(json) {
+        json = JSON.parse(json);
+        alert(json);
+         $('#output').html('<img src="' + json.data.url + '">');
+      }
+   });
+
+
 })
