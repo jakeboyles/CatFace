@@ -58,7 +58,7 @@
 
      <img class="cat7 cat" src="img/cat7.png">
 
-     <img class="cat8 cat" src="img/cat8.png">
+     <!-- <img class="cat8 cat" src="img/cat8.png"> -->
      
      <img class="cat9 cat" src="img/cat9.jpg">
 
