@@ -127,8 +127,8 @@ $(".cat6").on("click",function(){
 })
 
 
-$(".ryan").on("click",function(){
-      fabric.Image.fromURL("img/ryan.png", function(obj) {
+$(".chris").on("click",function(){
+      fabric.Image.fromURL("img/chris.png", function(obj) {
     canvas.add(obj.set({
         width: 394,
         hasControls: true,
@@ -151,8 +151,8 @@ $(".ryan").on("click",function(){
 })
 
 
-$(".jake").on("click",function(){
-      fabric.Image.fromURL("img/jake.png", function(obj) {
+$(".connor").on("click",function(){
+      fabric.Image.fromURL("img/connor.png", function(obj) {
     canvas.add(obj.set({
         width: 394,
         hasControls: true,
@@ -175,8 +175,8 @@ $(".jake").on("click",function(){
 })
 
 
-$(".jevan").on("click",function(){
-      fabric.Image.fromURL("img/jevan.png", function(obj) {
+$(".joe").on("click",function(){
+      fabric.Image.fromURL("img/joe.png", function(obj) {
     canvas.add(obj.set({
         width: 394,
         hasControls: true,
@@ -198,8 +198,8 @@ $(".jevan").on("click",function(){
     });
 })
 
-$(".josh").on("click",function(){
-      fabric.Image.fromURL("img/thompson.png", function(obj) {
+$(".mojita").on("click",function(){
+      fabric.Image.fromURL("img/mojita.png", function(obj) {
     canvas.add(obj.set({
         width: 394,
         hasControls: true,
@@ -222,8 +222,8 @@ $(".josh").on("click",function(){
 })
 
 
-$(".weaver").on("click",function(){
-      fabric.Image.fromURL("img/weaver.png", function(obj) {
+$(".nick").on("click",function(){
+      fabric.Image.fromURL("img/nick.png", function(obj) {
     canvas.add(obj.set({
         width: 394,
         hasControls: true,
@@ -243,6 +243,29 @@ $(".weaver").on("click",function(){
     //img.bringToFront();
     canvas.renderAll();
     });
+})
+
+$(".ross").on("click",function(){
+    fabric.Image.fromURL("img/ross.png", function(obj) {
+  canvas.add(obj.set({
+      width: 394,
+      hasControls: true,
+      //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
+      selection: false,       
+      lockRotation:false,
+      //lockMovement: false,lockMovementY: false,lockMovementX: false,
+      //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
+      transparentBorder: true,
+      height: 394,
+      angle: 0,
+      cornersize: 10,
+      left: 102, 
+      top: 52
+  }));
+  canvas.setActiveObject(canvas.item(0));
+  //img.bringToFront();
+  canvas.renderAll();
+  });
 })
 
 $(".cat7").on("click",function(){
@@ -278,6 +301,23 @@ $(".cat8").on("click",function(){
   canvas.renderAll();
 
 })
+
+$(".cat9").on("click",function(){
+    
+      var img = new Image();
+      img.onload = function(){
+       canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
+                originX: 'left',
+                originY: 'top',
+                left: 0,
+                top: 0,
+                backgroundImageStretch: true,
+            });
+      };
+      img.src = "img/cat9.jpg";
+      canvas.renderAll();
+    
+    })
 
 $(".save").on("click",function(){
 //   canvasURL = canvas.toDataURL();

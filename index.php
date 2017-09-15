@@ -11,24 +11,25 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-                <script src="https://rawgit.com/kangax/fabric.js/master/dist/fabric.js"></script>
+        <script src="https://rawgit.com/kangax/fabric.js/master/dist/fabric.js"></script>
     </head>
     <body>
-    <h2>Oodlizer</h2>
+    <h2>Ahalogizer</h2>
 
     <div class="people">
-    <H3>Oodle Staff</H3>
-        <img class="ryan person" src="img/ryan.png">
-        <img class="jake person" src="img/jake.png">
-        <img class="jevan person" src="img/jevan.png">
-        <img class="josh person" src="img/thompson.png">
-        <img class="weaver person" src="img/weaver.png">
+    <H3>Ahalogy Product</H3>
+        <img class="chris person" src="img/chris.png">
+        <img class="connor person" src="img/connor.png">
+        <img class="joe person" src="img/joe.png">
+        <img class="mojita person" src="img/mojita.png">
+        <img class="nick person" src="img/nick.png">
+        <img class="ross person" src="img/ross.png">
+        <img class="kolin person" src="img/kolin.png">
         <a href="#" class="pull-left save btn btn-primary">Save</a>
-
     </div>
 
 
@@ -53,6 +54,8 @@
      <img class="cat7 cat" src="img/cat7.png">
 
      <img class="cat8 cat" src="img/cat8.png">
+     
+     <img class="cat9 cat" src="img/cat9.jpg">
 
 </div>
 
