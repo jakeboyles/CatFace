@@ -342,13 +342,13 @@ $(".cat9").on("click",function(){
     
     })
 
-$(".save").on("click",function(){
+$(".save").on("click",function(e){
 //   canvasURL = canvas.toDataURL();
 // var image = new Image();
 // image.src = canvas.toDataURL("image/png");
 // $('.saved').replaceWith(image);
 // return false;
-
+ e.preventDefault();
  $.ajax({
       type: 'POST',
       url: 'save.php',
