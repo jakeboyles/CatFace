@@ -21,67 +21,51 @@
     <h2>Ahalogizer</h2>
 
     <div class="wholeContainer">
-    <div class="people">
-    <H3>Ahalogy Product</H3>
-        <img class="chris person" src="img/chris.png">
-        <img class="connor person" src="img/connor.png">
-        <img class="joe person" src="img/joe.png">
-        <img class="mojita person" src="img/mojita.png">
-        <img class="nick person" src="img/nick.png">
-        <img class="ross person" src="img/ross.png">
-        <img class="kolin person" src="img/kolin.png">
-        <a href="#" class="pull-left save btn btn-primary">Save</a>
+        <div class="people">
+            <H3>Ahalogy Product</H3>
+            <img class="chris person" src="img/chris.png">
+            <img class="connor person" src="img/connor.png">
+            <img class="joe person" src="img/joe.png">
+            <img class="mojita person" src="img/mojita.png">
+            <img class="nick person" src="img/nick.png">
+            <img class="ross person" src="img/ross.png">
+            <img class="kolin person" src="img/kolin.png">
+            <a href="#" class="pull-left save btn btn-primary">Save</a>
+        </div>
+
+        <canvas id="c" class="lower-canvas" height="200" width="900" style=" width: 200px; height: 200px; left: 0px; top: 0px; -moz-user-select: none;"></canvas>
+
+        <div id="canvasContainer"></div>
+
+        <div class="saveContainer">
+            <div id="output" class="saved"></div>
+        </div>
+
+        <div class="cats">
+            <img class="cat1 cat" src="img/cat1.jpg">
+            <img class="cat2 cat" src="img/cat2.png">
+            <img class="cat3 cat" src="img/cat3.png">
+            <img class="cat4 cat" src="img/cat4.png">
+            <img class="cat5 cat" src="img/cat5.png">
+            <img class="cat6 cat" src="img/cat6.png">
+            <img class="cat7 cat" src="img/cat7.png">
+            <!-- <img class="cat8 cat" src="img/cat8.png"> -->
+            <img class="cat9 cat" src="img/cat9.jpg">
+        </div>
     </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-
-    <canvas id="c" class="lower-canvas" height="200" width="900" style=" width: 200px; height: 200px; left: 0px; top: 0px; -moz-user-select: none;"></canvas>
-
-    <div id="canvasContainer"></div>
-
-
-    <div class="saveContainer">
-     <div id="output" class="saved"></div>
-     </div>
-
-<div class="cats">
-    <img class="cat1 cat" src="img/cat1.jpg">
-
-    <img class="cat2 cat" src="img/cat2.png">
-
-     <img class="cat3 cat" src="img/cat3.png">
-
-     <img class="cat4 cat" src="img/cat4.png">
-
-     <img class="cat5 cat" src="img/cat5.png">
-
-     <img class="cat6 cat" src="img/cat6.png">
-
-     <img class="cat7 cat" src="img/cat7.png">
-
-     <!-- <img class="cat8 cat" src="img/cat8.png"> -->
-     
-     <img class="cat9 cat" src="img/cat9.jpg">
-
-</div>
-</div>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <!-- Add your site or application content here -->
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
     </body>
 </html>
