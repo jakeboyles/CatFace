@@ -20,6 +20,7 @@
     <body>
     <h2>Ahalogizer</h2>
 
+    <div class="wholeContainer">
     <div class="people">
     <H3>Ahalogy Product</H3>
         <img class="chris person" src="img/chris.png">
@@ -63,6 +64,7 @@
      <h2>Image will save here:</h2>
      <div id="output" class="saved"></div>
      </div>
+</div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->

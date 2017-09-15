@@ -312,6 +312,12 @@ h2 {
     font-weight:600;
 }
 
+.wholeContainer {
+    max-width:900px;
+    margin:0px auto;
+    display:block;
+}
+
 .canvas-container {
   width:55%;
   float:right;
