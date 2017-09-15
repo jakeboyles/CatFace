@@ -130,7 +130,7 @@ $(".cat6").on("click",function(){
 $(".chris").on("click",function(){
       fabric.Image.fromURL("img/chris.png", function(obj) {
     canvas.add(obj.set({
-        width: 394,
+        width: 229,
         hasControls: true,
         //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
         selection: false,       
@@ -138,7 +138,7 @@ $(".chris").on("click",function(){
         //lockMovement: false,lockMovementY: false,lockMovementX: false,
         //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
         transparentBorder: true,
-        height: 394,
+        height: 321,
         angle: 0,
         cornersize: 10,
         left: 102, 
@@ -154,7 +154,7 @@ $(".chris").on("click",function(){
 $(".connor").on("click",function(){
       fabric.Image.fromURL("img/connor.png", function(obj) {
     canvas.add(obj.set({
-        width: 394,
+        width: 329,
         hasControls: true,
         //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
         selection: false,       
@@ -162,7 +162,7 @@ $(".connor").on("click",function(){
         //lockMovement: false,lockMovementY: false,lockMovementX: false,
         //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
         transparentBorder: true,
-        height: 394,
+        height: 435,
         angle: 0,
         cornersize: 10,
         left: 102, 
@@ -178,7 +178,7 @@ $(".connor").on("click",function(){
 $(".joe").on("click",function(){
       fabric.Image.fromURL("img/joe.png", function(obj) {
     canvas.add(obj.set({
-        width: 394,
+        width: 261,
         hasControls: true,
         //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
         selection: false,       
@@ -186,7 +186,7 @@ $(".joe").on("click",function(){
         //lockMovement: false,lockMovementY: false,lockMovementX: false,
         //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
         transparentBorder: true,
-        height: 394,
+        height: 372,
         angle: 0,
         cornersize: 10,
         left: 102, 
@@ -201,7 +201,7 @@ $(".joe").on("click",function(){
 $(".mojita").on("click",function(){
       fabric.Image.fromURL("img/mojita.png", function(obj) {
     canvas.add(obj.set({
-        width: 394,
+        width: 310,
         hasControls: true,
         //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
         selection: false,       
@@ -209,7 +209,7 @@ $(".mojita").on("click",function(){
         //lockMovement: false,lockMovementY: false,lockMovementX: false,
         //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
         transparentBorder: true,
-        height: 394,
+        height: 427,
         angle: 0,
         cornersize: 10,
         left: 102, 
@@ -225,7 +225,7 @@ $(".mojita").on("click",function(){
 $(".nick").on("click",function(){
       fabric.Image.fromURL("img/nick.png", function(obj) {
     canvas.add(obj.set({
-        width: 394,
+        width: 370,
         hasControls: true,
         //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
         selection: false,       
@@ -233,7 +233,7 @@ $(".nick").on("click",function(){
         //lockMovement: false,lockMovementY: false,lockMovementX: false,
         //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
         transparentBorder: true,
-        height: 394,
+        height: 495,
         angle: 0,
         cornersize: 10,
         left: 102, 
