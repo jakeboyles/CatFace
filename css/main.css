@@ -411,6 +411,13 @@ h3 {
   padding:20px;
 }
 
+#output {
+    max-width:500px;
+}
+
+#output img {
+    max-width:100%;
+}
 @media screen and (max-width: 500px) {
     .canvas-container  {
       margin-right:0;
