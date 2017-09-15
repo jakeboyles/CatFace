@@ -351,7 +351,6 @@ $(".save").on("click",function(e){
       data: {task: 'save', img: canvas.toDataURL('png')},
       success: function(json) {
         json = JSON.parse(json);
-        alert(json);
          $('#output').html('<img src="' + json.data.url + '">');
       }
    });
