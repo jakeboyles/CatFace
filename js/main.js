@@ -271,22 +271,18 @@ $(".ross").on("click",function(){
 $(".kolin").on("click",function(){
     fabric.Image.fromURL("img/kolin.png", function(obj) {
   canvas.add(obj.set({
-      width: 394,
+      width: 358,
       hasControls: true,
-      //cornerColor: 'green',cornerSize: 16,transparentCorners: false,
       selection: false,       
       lockRotation:false,
-      //lockMovement: false,lockMovementY: false,lockMovementX: false,
-      //lockUniScaling: false,lockScalingY:false, lockScalingX:false,
       transparentBorder: true,
-      height: 394,
+      height: 468,
       angle: 0,
       cornersize: 10,
       left: 102, 
       top: 52
   }));
   canvas.setActiveObject(canvas.item(0));
-  //img.bringToFront();
   canvas.renderAll();
   });
 })
