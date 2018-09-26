@@ -128,11 +128,12 @@ h4 {
 }
 
 .cred {
-    color:#fff;
-    position: absolute;
-    bottom:0;
-    right:0;
-    padding:10px;
+    color: #fff;
+    /* bottom: 0; */
+    /* right: 0; */
+    padding: 10px;
+    float: right;
+    width: 100%;
 }
 
 .cred a {
@@ -466,5 +467,24 @@ h3 {
 @media screen and (max-width: 500px) {
     .canvas-container  {
       margin-right:0;
+      float:none;
+      margin:0px auto;
+    }
+
+    .people {
+        width:80%;
+        float:none;
+        margin-left:5%;
+        margin-bottom:2em;
+    }
+
+    .canvas-container, canvas {
+        width:300px !important;
+        height:300px !important;
+    }
+
+    .cred {
+        text-align:center;
+        margin-top:3em;
     }
 }
