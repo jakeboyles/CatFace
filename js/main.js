@@ -1,291 +1,72 @@
-var canvas = new fabric.Canvas('c',{backgroundColor : "#0ff",width: '600',height: '500'});
-canvas.add(
-);
 
-var img = new Image();
-img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-        originX: 'left',
-        originY: 'top',
-        left: 0,
-        top: 0,
-        backgroundImageStretch: true,
+const canvas = new fabric.Canvas('c', {
+    backgroundColor : "#fff",
+    width: '500',
+    height: '500'
+});
+
+canvas.add();
+
+document.getElementById("upload_widget_opener").addEventListener("click", function() {
+    cloudinary.openUploadWidget({ cloud_name: 'dubg2bkhg', upload_preset: 'jzshfuxk'}, 
+      function(error, result) { 
+        const image = result[0].thumbnail_url;
+        const newImage = image.replace('h_60', 'h_400').replace(',w_90','');
+        fabric.Image.fromURL(newImage, function(obj) {
+            canvas.add(obj.set({
+                hasControls: true,
+                selection: true,       
+                lockRotation:false,
+                transparentBorder: true,
+                height: 400,
+                angle: 0,
+                cornersize: 10,
+                left: 102, 
+                top: 52,
+                crossOrigin: 'anonymous'
+            }));
+            canvas.setActiveObject(obj);
+            obj.moveTo(-1);
+            canvas.renderAll();
+            }.bind(this),{
+                crossOrigin: 'anonymous'
+            }
+        );
     });
-};
-img.src = "img/cat2.png";
+    
+}, false);
 
-$(".cat1").on("click",function(){
-  var img = new Image();
-  img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-  };
-  img.src = "img/cat1.jpg";
-  canvas.renderAll();
-})
+let bg = null;
 
-$(".cat2").on("click",function(){
-  var img = new Image();
-  img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-  };
-  img.src = "img/cat2.png";
-  canvas.renderAll();
-})
-
-$(".cat3").on("click",function(){
-  var img = new Image();
-  img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-  };
-  img.src = "img/cat3.png";
-  canvas.renderAll();
-})
-
-
-$(".cat4").on("click",function(){
-  var img = new Image();
-  img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-  };
-  img.src = "img/cat4.png";
-  canvas.renderAll();
-})
-
-
-$(".cat5").on("click",function(){
-  var img = new Image();
-  img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-  };
-  img.src = "img/cat5.png";
-  canvas.renderAll();
-})
-
-
-$(".cat6").on("click",function(){
-  var img = new Image();
-  img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-  };
-  img.src = "img/cat6.png";
-  canvas.renderAll();
-})
-
-
-$(".chris").on("click",function(){
-      fabric.Image.fromURL("img/chris.png", function(obj) {
+fabric.Image.fromURL("img/bg.png", function(obj) {
+    bg = obj;
     canvas.add(obj.set({
-        width: 229,
-        hasControls: true,
+        width: 500,
+        hasControls: false,
         selection: false,       
-        lockRotation:false,
+        lockRotation:true,
         transparentBorder: true,
-        height: 321,
+        height: 500,
         angle: 0,
+        lockMovementX: true,
+        lockMovementY: true,
         cornersize: 10,
-        left: 102, 
-        top: 52
+        left: 0, 
+        top: 0
     }));
-    canvas.setActiveObject(canvas.item(0));
+    obj.moveTo(5);
     canvas.renderAll();
-    });
-})
+});
 
-
-$(".connor").on("click",function(){
-    fabric.Image.fromURL("img/connor.png", function(obj) {
-    canvas.add(obj.set({
-        width: 329,
-        hasControls: true,
-        selection: false,       
-        lockRotation:false,
-        transparentBorder: true,
-        height: 435,
-        angle: 0,
-        cornersize: 10,
-        left: 102, 
-        top: 52
-    }));
-    canvas.setActiveObject(canvas.item(0));
+$("#set").on('click', function(e){
+    e.preventDefault();
+    canvas.setActiveObject(bg);
     canvas.renderAll();
-    });
 })
 
-
-$(".joe").on("click",function(){
-    fabric.Image.fromURL("img/joe.png", function(obj) {
-    canvas.add(obj.set({
-        width: 261,
-        hasControls: true,
-        selection: false,       
-        lockRotation:false,
-        transparentBorder: true,
-        height: 372,
-        angle: 0,
-        cornersize: 10,
-        left: 102, 
-        top: 52
-    }));
-    canvas.setActiveObject(canvas.item(0));
-    canvas.renderAll();
-    });
-})
-
-$(".mojita").on("click",function(){
-      fabric.Image.fromURL("img/mojita.png", function(obj) {
-    canvas.add(obj.set({
-        width: 310,
-        hasControls: true,
-        selection: false,       
-        lockRotation:false,
-        transparentBorder: true,
-        height: 427,
-        angle: 0,
-        cornersize: 10,
-        left: 102, 
-        top: 52
-    }));
-    canvas.setActiveObject(canvas.item(0));
-    canvas.renderAll();
-    });
-})
-
-$(".nick").on("click",function(){
-    fabric.Image.fromURL("img/nick.png", function(obj) {
-    canvas.add(obj.set({
-        width: 370,
-        hasControls: true,
-        selection: false,       
-        lockRotation:false,
-        transparentBorder: true,
-        height: 495,
-        angle: 0,
-        cornersize: 10,
-        left: 102, 
-        top: 52
-    }));
-    canvas.setActiveObject(canvas.item(0));
-    canvas.renderAll();
-    });
-})
-
-$(".ross").on("click",function(){
-    fabric.Image.fromURL("img/ross.png", function(obj) {
-    canvas.add(obj.set({
-      width: 394,
-      hasControls: true,
-      selection: false,       
-      lockRotation:false,
-      transparentBorder: true,
-      height: 394,
-      angle: 0,
-      cornersize: 10,
-      left: 102, 
-      top: 52
-  }));
-  canvas.setActiveObject(canvas.item(0));
-  canvas.renderAll();
-  });
-})
-
-$(".kolin").on("click",function(){
-    fabric.Image.fromURL("img/kolin.png", function(obj) {
-  canvas.add(obj.set({
-      width: 358,
-      hasControls: true,
-      selection: false,       
-      lockRotation:false,
-      transparentBorder: true,
-      height: 468,
-      angle: 0,
-      cornersize: 10,
-      left: 102, 
-      top: 52
-  }));
-  canvas.setActiveObject(canvas.item(0));
-  canvas.renderAll();
-  });
-})
-
-$(".cat7").on("click",function(){
-  var img = new Image();
-  img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-  };
-  img.src = "img/cat7.png";
-  canvas.renderAll();
-})
-
-$(".cat8").on("click",function(){
-  var img = new Image();
-  img.onload = function(){
-   canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-  };
-  img.src = "img/cat8.png";
-  canvas.renderAll();
-})
-
-$(".cat9").on("click",function(){
-    var img = new Image();
-    img.onload = function(){
-    canvas.setBackgroundImage(img.src, canvas.renderAll.bind(canvas), {
-            originX: 'left',
-            originY: 'top',
-            left: 0,
-            top: 0,
-            backgroundImageStretch: true,
-        });
-    };
-    img.src = "img/cat9.jpg";
-    canvas.renderAll();
+$(".startover").on("click", function(e){
+    e.preventDefault();
+    location.reload();
 })
 
 $(".save").on("click",function(e){
@@ -297,6 +78,8 @@ $(".save").on("click",function(e){
         success: function(json) {
             json = JSON.parse(json);
             $('#output').html('<img src="' + json.data.url + '">');
+
+            $(".saveContainer").removeClass('hide');
         }
     });
 

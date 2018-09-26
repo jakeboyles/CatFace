@@ -18,43 +18,40 @@
         <script src="https://rawgit.com/kangax/fabric.js/master/dist/fabric.js"></script>
     </head>
     <body>
-    <h2>Ahalogizer</h2>
+    <h2>#StartupCincy Profile Generator</h2>
 
     <div class="wholeContainer">
         <div class="people">
-            <H3>Ahalogy Product</H3>
-            <img class="chris person" src="img/chris.png">
-            <img class="connor person" src="img/connor.png">
-            <img class="joe person" src="img/joe.png">
-            <img class="mojita person" src="img/mojita.png">
-            <img class="nick person" src="img/nick.png">
-            <img class="ross person" src="img/ross.png">
-            <img class="kolin person" src="img/kolin.png">
-            <a href="#" class="pull-left save btn btn-primary">Save</a>
+            <h4>Step 1:</h4>
+            <a href="#" class="pull-left btn btn-primary" id="upload_widget_opener">Upload Image</a>
+
+            <h4>Step 2</h4> 
+            <P>Move and Resize Your Image So Your Face Is In The Middle.</p>
+
+            <h4>Step 3</h4>
+            <a href="#" class="pull-left btn btn-primary" id="set">Set Image</a>
+
+            <h4>Step 4</h4>
+            <a id="save" href="#" class="pull-left save btn btn-primary">Save Image</a>
         </div>
 
         <canvas id="c" class="lower-canvas" height="200" width="900" style=" width: 200px; height: 200px; left: 0px; top: 0px; -moz-user-select: none;"></canvas>
 
         <div id="canvasContainer"></div>
 
-        <div class="saveContainer">
+        <div class="saveContainer hide">
+            <p>Right Click to Save and Rep #StartupCincy on your Social Accounts!</p>
             <div id="output" class="saved"></div>
+
+            <a class="btn startover">Start Over</a>
         </div>
 
-        <div class="cats">
-            <img class="cat1 cat" src="img/cat1.jpg">
-            <img class="cat2 cat" src="img/cat2.png">
-            <img class="cat3 cat" src="img/cat3.png">
-            <img class="cat4 cat" src="img/cat4.png">
-            <img class="cat5 cat" src="img/cat5.png">
-            <img class="cat6 cat" src="img/cat6.png">
-            <img class="cat7 cat" src="img/cat7.png">
-            <!-- <img class="cat8 cat" src="img/cat8.png"> -->
-            <img class="cat9 cat" src="img/cat9.jpg">
-        </div>
+        <span class="cred">A <a href="http://www.twitter.com/jakeboyles">@JakeBoyles</a> Project. Built In Cincy. </span>
+
     </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="//widget.cloudinary.com/global/all.js" type="text/javascript"></script>  
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
