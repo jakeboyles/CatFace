@@ -60,6 +60,10 @@ hr {
     padding: 0;
 }
 
+.showMobile {
+    display:none;
+}
+
 /*
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
@@ -471,6 +475,10 @@ h3 {
       margin-right:0;
       float:none;
       margin:0px auto;
+    }
+
+    .showMobile {
+        display:inline;
     }
 
     .people {

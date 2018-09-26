@@ -26,7 +26,7 @@
             <a href="#" class="pull-left btn btn-primary" id="upload_widget_opener">Upload Image</a>
 
             <h4>Step 2</h4> 
-            <P>Move and Resize Your Image So Your Face Is In The Middle.</p>
+            <P>Move and Resize Your Image So Your Face Is In The Middle. <span class="showMobile">Scroll down to do this</span></p>
 
             <h4>Step 3</h4>
             <a href="#" class="pull-left btn btn-primary" id="set">Set Image</a>
