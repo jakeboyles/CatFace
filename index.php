@@ -35,7 +35,8 @@
         <script src="https://rawgit.com/kangax/fabric.js/master/dist/fabric.js"></script>
     </head>
     <body>
-    <h2>#StartupCincy Profile Generator</h2>
+    <h2>#StartupWeek Profile Generator</h2>
+    <h3>Register for <a target="_blank" href="http://Cincinnati.StartupWeek.co">Cincy Startup Week, today!</a></h3>
 
     <div class="wholeContainer">
         <div class="people">
